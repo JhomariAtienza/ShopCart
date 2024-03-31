@@ -1,0 +1,68 @@
+/* CSS for the header section */
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ccc;
+}
+
+#shopName a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+}
+
+#collection div {
+  margin-right: 20px;
+}
+
+#collection div a {
+  text-decoration: none;
+  color: #333;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+#input {
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: 5px;
+}
+
+#user {
+  display: flex;
+  align-items: center;
+}
+
+#badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.userIcon {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Add spacing around icons */
+#container i {
+  margin-right: 10px; /* Adjust spacing as needed */
+}

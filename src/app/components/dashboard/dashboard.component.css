@@ -1,0 +1,57 @@
+.container {
+    margin-top: 20px;
+}
+
+.filter-controls {
+    margin-bottom: 20px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apply-btn, .sort-btn {
+    margin-top: 10px;
+}
+
+.product-grid {
+    margin-top: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    margin-top: auto;
+}
+
+.add-to-cart-btn {
+    margin-top: 0.5rem;
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+/* dashboard.component.css */
+
+/* Style for the dashboard container */
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  /* Style for the product card */
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the product image */
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style for the "Add to Cart" button */
+  .add-to-cart-button {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  /* Hover effect for the "Add to Cart" button */
+  .add-to-cart-button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  

@@ -1,0 +1,31 @@
+<div class="login-container" [style.background-image]="'url(' + backgroundImageUrl + ')'">
+  <form class="login-form" (ngSubmit)="login()">
+    <!-- Welcome Greeting -->
+    <h2 class="welcome-heading text-center mb-4">Welcome Dear Shopper!</h2>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" class="form-control" [(ngModel)]="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="row">
+      <div class="col-md-6">
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-secondary btn-block" routerLink="/signup">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Error Message -->
+    <div *ngIf="error" class="text-danger mt-3">{{ error }}</div>
+
+    <!-- Forgot Password Link -->
+    <a routerLink="/forgot-password" class="d-block text-center mt-3">Forgot Password?</a>
+  </form>
+</div>

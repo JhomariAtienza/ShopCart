@@ -1,0 +1,39 @@
+<!-- cart.component.html -->
+
+<div class="container">
+    <h2>Cart</h2>
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td>
+            <img [src]="item.product.image" alt="{{ item.product.name }}" width="50">
+            {{ item.product.name }}
+          </td>
+          <td>{{ item.product.price }}</td>
+          <td>{{ item.product.quantity }}</td>
+          <td>{{ item.product.price * item.product.quantity }}</td>
+          <td>
+            <button class="btn btn-danger" (click)="removeCartItem(item.product)">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div *ngIf="cartItems.length === 0" class="text-center">Your cart is empty.</div>
+  
+    <div class="text-end">
+      <h4>Total Price: {{ totalPrice }}</h4>
+      <button class="btn btn-primary" (click)="checkout()">Checkout</button>
+    </div>
+  </div>
+  
